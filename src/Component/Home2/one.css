@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Benne&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+div.main {
+  background-color: #ffd1b9;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  justify-content: center;
+
+}
+h2.heading{
+    font-size: 8.5vw;
+    font-family: "Benne", serif;
+    font-weight: 400;
+    line-height: 87%;
+    letter-spacing: -0.35vw;
+   
+}
+.pd-para{
+    
+    margin-bottom: 50px;
+    width: 40vw;
+}
+.para{
+    
+    font-size: 18px;
+    line-height: 127%;
+    letter-spacing: -0.35;
+   
+  
+}
+ .upper-head{
+    border-bottom:  none ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.head-d{
+    width: 80%;
+    font-weight: 5vw;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;   
+}
+
+.left , .right , .mid{
+  flex: 30%;  
+}
+.lower-head{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+.row-menu{
+    display: flex;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: black;
+    border-top: 1px solid black;
+    justify-content: flex-start;
+    height: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.row-menu:hover{
+    color: black;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+img{
+    max-width: 100%;
+}
+.name{
+align-items: center;
+margin-left: 10px;
+}
+.name-d{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main{
+    border-bottom: 1px solid #000;
+}
+
+@media screen and (min-width: 240px) and (max-width: 767px) {    
+    .lower-head{
+        display: flex;
+        flex-direction: column;
+    }
+    .row-menu{
+        justify-content: center;
+    }
+}
+
+

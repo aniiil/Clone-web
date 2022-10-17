@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Benne&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div.main-div {
+  background-color: black;
+  color: white;
+  padding-top: 60px;
+  padding-bottom: 40px !important;
+  justify-content: center;
+}
+
+a.btn-text {
+  text-decoration: none;
+  color: #34a245;
+  border: 1px solid #34a245;
+  border-radius: 50px;
+  background-color: black;
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 20px;
+}
+.btn {
+  margin-bottom: 35px;
+}
+div.main-div {
+  padding-bottom: 0px;
+}
+
+a.btn-text:hover {
+  color: black;
+  background-color: #34a245;
+  transition: 0.5s;
+}
+
+/* <=====Lower div css=====> */
+div.main-lower-div {
+  background-color: #34a245;
+  color: black;
+  padding-top: 60px;
+  padding-bottom: 40px !important;
+  justify-content: center;
+}
+
+a.btn2-text {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50px;
+  background-color: #34a245;
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 20px;
+}
+.btn2 {
+  margin-bottom: 35px;
+}
+
+a.btn2-text:hover {
+  color: #34a245;
+  background-color: white;
+  transition: 0.5s;
+}
+.dual-div{
+  border-bottom: 1px solid #000;
+}
+
+@media screen and (min-width: 240px) and (max-width: 678px) {
+  .pd-para {
+    width: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  div.upper-head{
+    padding-bottom: 0px;
+  }
+ 
+}

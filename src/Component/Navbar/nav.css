@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-container {
+  border-bottom: 1px solid black;
+ 
+  font-family: 'Shippori Mincho', serif;
+}
+div.main-nav {
+  padding: 25px 0 25px 25px;
+}
+
+.button-text {
+  text-decoration: none !important;
+  color: black;
+}
+.nav-menu {
+  margin-right: 40px;
+  text-decoration: none !important;
+  color: black;
+}
+
+.nav-menu:hover {
+  text-decoration: 1;
+  border-bottom: 1px solid black;
+  color: black;
+}
+
+.button-text {
+  background-color: black;
+  border-radius: 50px;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+.button-text:hover {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  transition: 0.5s;
+}
+.sub-nav {
+  padding-top: 25px;
+  margin-left: auto;
+}
+/* <========Media Queries for devices below 800px========> */
+@media screen and (min-width: 550px) and (max-width: 800px) {
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sub-nav {
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  .main-nav {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px !important;
+  }
+}
+/* <========Media Queries for devices below 550px========> */
+@media screen and (min-width: 240px) and (max-width: 549px) {
+  .nav-container {
+    flex-direction: column;
+  }
+  .main-nav {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px !important;
+  }
+
+  .nav-menu {
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .sub-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    margin-top: 10px;
+  }
+  a.button-text {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

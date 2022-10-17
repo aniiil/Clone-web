@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Benne&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  border-bottom: 1px solid #000;
+}
+.container-head {
+  padding-top: 95px;
+  padding-bottom: 95px;
+  border-bottom: 1px solid black;
+}
+.head-content h1 {
+  font-family: "Benne", serif;
+  font-size: 7.3vw;
+  font-weight: 400;
+  letter-spacing: -0.35vw;
+}
+.home-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.row-first {
+  padding: 30px;
+  border-right: 1px solid black;
+  flex: 50%;
+}
+.row-second {
+  flex: 50%;
+}
+h4.description {
+  padding-left: 60px;
+  padding-right: 60px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 127%;
+}
+.row {
+  border-bottom: 1px solid black;
+}
+.image {
+  justify-content: center;
+}
+/* <=====Media Queries for Responsiveness======> */
+@media screen and (min-width: 240px) and (max-width: 479px) {
+  .container-head {
+    padding-top: 44px;
+    padding-bottom: 44px;
+    border-bottom: none;
+  }
+
+  .home-content {
+    flex-direction: column;
+  }
+  .row-second {
+    order: 1;
+    border-bottom: 1px solid black;
+  }
+  .row-first {
+    order: 2;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container-head {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .container-head {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  h4.description {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media screen and (min-width: 240px) and (max-width: 479px) {
+  h4.description {
+    font-size: 15px;
+  }
+}

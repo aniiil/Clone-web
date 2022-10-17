@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Benne&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title-content {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-bottom: 1px solid white;
+}
+/* <=====CSS for left-side div =====> */
+
+.left-title {
+  background-color: black;
+  color: white;
+  flex: 46%;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+h2.title-text {
+  font-size: 7.3vw;
+  font-family: "Benne", serif;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.4vw;
+}
+
+/* <=====CSS for right-side div =====> */
+
+.right-title {
+  background-color: black;
+  color: white;
+  flex: 46%;
+  padding: 66px 40px;
+  justify-content: flex-start;
+}
+img.quote-img {
+  height: 150px;
+}
+img.pink{
+  height: 140px !important;
+  width: 75px !important;
+
+}
+img.green{
+  height: 127px;
+  width: 25px;
+}
+
+.quote {
+  font-family: "Shippori Mincho", serif;
+  margin-top: 66px;
+  width: 75%;
+}
+.quote-text {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 110%;
+  margin-bottom: 25px;
+}
+
+.quote-person {
+  font-size: 22px;
+  letter-spacing: 160%;
+  letter-spacing: -0.07vw;
+}
+
+/* <=====Media Queries for Responsiveness======> */
+
+@media screen and (min-width: 240px) and (max-width: 768px) {
+  .title-content {
+    flex-direction: column;
+  }
+  .right-title{
+    padding-top: 20px;
+  }
+  .left-title{
+    padding-bottom: 0px;
+  }
+}
+@media screen and (max-width: 991px) {
+  h2.title-text {
+    font-size: 40px;
+  }
+}

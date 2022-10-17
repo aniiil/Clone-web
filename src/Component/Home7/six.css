@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Benne&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: b;
+}
+.flex-of-three {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+/* <=====CSS for left-header div =====> */
+.first-flex {
+  flex: 50%;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+h2.head-first-flex {
+  font-size: 7.3vw;
+  line-height: 100%;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  letter-spacing: -0.35vw;
+  font-family: "Benne", serif;
+}
+
+.second-flex {
+  flex: 50%;
+  align-items: flex-start;
+  border-left: 1px solid #000;
+}
+
+.nested-head1 {
+  font-size: 2.7vw;
+  line-height: 100%;
+  letter-spacing: -0.12vw;
+  font-family: "Benne", serif;
+}
+.dis-text-nested {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.dis-text-para {
+  font-family: "Shippori Mincho", serif;
+  margin-bottom: 150px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  line-height: 127%;
+  font-weight: 400;
+}
+.nested1-flex {
+  padding: 40px 30px;
+  min-height: 350px;
+  border-bottom: 1px solid #000;
+}
+.nested2-flex {
+  padding: 40px 30px;
+  min-height: 350px;
+}
+.btn-nested {
+  padding: 8px 32px 10px;
+  background-color: white;
+  color: #34a245;
+  font-size: 22px;
+  cursor: pointer;
+  border: 1px solid #34a245;
+  border-radius: 50px;
+  display: inline;
+  margin-top: 25px;
+}
+a.btn-text-flex {
+  text-decoration: none;
+}
+.btn-nested:hover{
+  background-color: #34a245;
+  color: white;
+  transition: 0.5s;
+}
+
+/* <====Media-queries=====> */
+@media screen and (min-width: 240px) and (max-width: 800px) {
+    .flex-of-three {
+      flex-direction: column;
+    }
+    h2.head-first-flex {
+      font-size: 60px;
+    }
+    .nested-head1{
+        font-size: 28px;
+    }
+    .second-flex{
+        border: none;
+    }
+  }
